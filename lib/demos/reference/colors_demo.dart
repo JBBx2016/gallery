@@ -5,6 +5,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_gen/gen_l10n/gallery_localizations.dart';
+import 'package:gallery/kolumbus/colors.dart';
 
 // BEGIN colorsDemo
 
@@ -29,6 +30,34 @@ class _Palette {
 List<_Palette> _allPalettes(BuildContext context) {
   final localizations = GalleryLocalizations.of(context)!;
   return [
+    _Palette(
+      name: "Kolumbus Grå",
+      primary: FColors.charcoal,
+    ),
+    _Palette(
+      name: localizations.colorsBlueGrey,
+      primary: Colors.blueGrey,
+      threshold: 500,
+    ),
+    _Palette(
+      name: "Grå",
+      primary: FColors.grey,
+    ),
+    _Palette(
+      name: localizations.colorsGrey,
+      primary: Colors.grey,
+      threshold: 500,
+    ),
+    _Palette(
+      name: "Kolumbus Grønn",
+      primary: FColors.green,
+    ),
+    _Palette(
+      name: localizations.colorsGreen,
+      primary: Colors.green,
+      accent: Colors.greenAccent,
+      threshold: 500,
+    ),
     _Palette(
       name: localizations.colorsRed,
       primary: Colors.red,
@@ -84,12 +113,6 @@ List<_Palette> _allPalettes(BuildContext context) {
       threshold: 400,
     ),
     _Palette(
-      name: localizations.colorsGreen,
-      primary: Colors.green,
-      accent: Colors.greenAccent,
-      threshold: 500,
-    ),
-    _Palette(
       name: localizations.colorsLightGreen,
       primary: Colors.lightGreen,
       accent: Colors.lightGreenAccent,
@@ -127,16 +150,6 @@ List<_Palette> _allPalettes(BuildContext context) {
       name: localizations.colorsBrown,
       primary: Colors.brown,
       threshold: 200,
-    ),
-    _Palette(
-      name: localizations.colorsGrey,
-      primary: Colors.grey,
-      threshold: 500,
-    ),
-    _Palette(
-      name: localizations.colorsBlueGrey,
-      primary: Colors.blueGrey,
-      threshold: 500,
     ),
   ];
 }
